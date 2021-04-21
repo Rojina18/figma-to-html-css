@@ -4,6 +4,7 @@
     <title> Figma to HTML</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="glider.min.css">
 </head>
 <body>
     <div class="wrapper">
@@ -139,12 +140,96 @@
               <img src="images/LeftArrow.svg" alt="">
           </span>
 
-          <span class="slider-prev">
-            <img src="images/righArrow.svg" alt="">
+          <span class="slider-next">
+            <img src="images/RightArrow.svg" alt="">
         </span>
+
+        <div role="tablist" class="dots-container">
+          <div class="dots"></div>
+        </div>
         </div>
        </div>
     </section>
+
+    <div class="wrapper">
+    <section class="contact-section">
+     <h2>Contact Us</h2>
+     <form action="#">
+       <div class="group">
+         <input type="text" placeholder="Name">
+         <input type="text" placeholder="Email">
+       </div>
+
+       <div class="group">
+       <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+       </div>
+
+       <a href="#" class="btn cyan">Send Message</a>
+     </form>
+    </section>
+</div>
+
+<footer>
+  <div class="wrapper">
+    <div class="footer-container">
+       <div class="logo">
+        <img src="images/logo.PNG">
+       </div>
+       <div class="footer-nav">
+        <h3>Our Services</h3>
+        <ul>
+          <li><a href="#">Mobile Development</a></li>
+          <li><a href="#">Web App Development</a></li>
+          <li><a href="#">Theme Development</a></li> 
+          <li><a href="#">SEO</a></li>
+        </ul>
+       </div>
+
+       <div class="footer-nav">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="#">Gt Web Design</a></li>
+          <li><a href="#">Terms and Condition</a></li>
+          <li><a href="#">Privacy and Policy</a></li> 
+          <li><a href="#">Contact</a></li>
+        </ul>
+       </div>
+
+       <div class="footer-nav">
+       <h3>Get Social</h3>
+
+       <div class="footer-social">
+          <a href="">
+            <img src="images/facebook.png">
+          </a>
+
+          <a href="">
+            <img src="images/instagram.png">
+          </a>
+
+          <a href="">
+            <img src="images/twitter.png">
+          </a>
+          <div>info@gtcoding.net</div>
+       </div>
+       </div>
+    </div>
+  </div>
+  <p class="copyright">
+    This website was designed by Godson T. &copy; 2021
+  </p>
+</footer>
+    <script src="glider.min.js"></script>
+    <script>
+      new Glider(document.querySelector(".testimonials"),{
+      slidesToShow: 1,
+      dots: ".dots",
+       arrows:{
+         prev: '.slider-prev',
+         next: '.slider-next',
+       },
+    });
+    </script>
  <script src="main.js"></script>   
 </body>
 </html>
