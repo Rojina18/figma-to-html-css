@@ -433,3 +433,7 @@ footer a:hover {
     justify-content: space-between;
     padding: 100px 0 32px 0;
 }
+
+.footer-container .logo{
+    align-self: center;
+}
